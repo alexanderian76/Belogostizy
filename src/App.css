@@ -1,0 +1,167 @@
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  color: rgb(255, 255, 255);
+}
+
+.Header {
+  overflow: hidden;
+  max-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+.Header img{
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.ImageContainer {
+    overflow: hidden;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.ImageIn {
+  max-height: 200px;
+}
+
+.Scroll {
+  overflow: auto;
+  max-height: 300px;
+}
+
+
+.Slide {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+.Slide img{
+  width: 100%;
+  height: auto;
+}
+
+
+.Icon {
+  overflow: hidden;
+  max-height: 20px;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.Icon img {
+  width: 50px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.InSlide {
+  object-fit: cover;
+}
+
+.Indent {
+  text-indent: 1.5cm;
+}
+/*shadow-lg p-3 mb-5 bg-white rounded*/
