@@ -104,7 +104,7 @@ class Photo extends React.Component {
   {Array.from({ length: images.length }).map((_, idx) => (
     <Col key={idx} className="Card">
       <Card style={{backgroundColor : '#fafafa'}}>
-        <Card.Img style={{cursor: 'pointer'}} variant="top" src={images[idx].default} onClick={() => this.setState({modalShow: true, image: images[idx].default, header: keys[idx].slice(2, keys[idx].length - 5), description: descriptions[idx]})}/>
+        <Card.Img style={{cursor: 'pointer', aspectRatio: '1/1', objectFit: 'cover'}} variant="top" src={images[idx].default} onClick={() => this.setState({modalShow: true, image: images[idx].default, header: keys[idx].slice(2, keys[idx].length - 5), description: descriptions[idx]})}/>
         <Card.Body>
           
           <Card.Text style={{fontSize:18, textAlign : 'center'}}>

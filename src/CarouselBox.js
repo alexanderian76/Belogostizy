@@ -19,9 +19,9 @@ const labels = ['Семейный отдых на природе', 'Отвл
 export default class CarouselBox extends Component {
     render() {
         return(
-            <Carousel style={{height: this.props.height}} style={{marginTop: this.props.marginTop}} nextLabel="" prevLabel="">
+            <Carousel style={{height: this.props.height, marginTop: this.props.marginTop}} nextLabel="" prevLabel="">
                 {keys.map((image, index) =>
-                    <Carousel.Item><img className="d-block w-100 InSlide" style={{height: this.props.height}} src={images[index].default} alt="Image"/>
+                    <Carousel.Item key={index}><img className="d-block w-100 InSlide" style={{height: this.props.height}} src={images[index].default} alt="Image"/>
                     <Carousel.Caption style={{fontSize : 20}}>
                         {image.slice(2,image.length - 5)}.
                         </Carousel.Caption>
